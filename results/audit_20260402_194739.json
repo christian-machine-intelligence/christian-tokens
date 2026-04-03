@@ -1,0 +1,621 @@
+{
+  "timestamp": "20260402_194739",
+  "config": {
+    "datasets": [
+      "pile"
+    ],
+    "sample_size": 100000,
+    "seed": 42,
+    "encoding": "cl100k_base"
+  },
+  "dataset_results": [
+    {
+      "dataset_name": "pile",
+      "description": "The Pile (EleutherAI, ~825B tokens)",
+      "total_tokens_known": 825000000000,
+      "sample_size_target": 100000,
+      "docs_processed": 99994,
+      "sample_tokens": 154449098,
+      "tallies": {
+        "christian": {
+          "doc_count": 287,
+          "token_count": 12549126
+        },
+        "islamic": {
+          "doc_count": 29,
+          "token_count": 389155
+        },
+        "jewish": {
+          "doc_count": 25,
+          "token_count": 135271
+        },
+        "hindu": {
+          "doc_count": 20,
+          "token_count": 286161
+        },
+        "buddhist": {
+          "doc_count": 14,
+          "token_count": 652227
+        },
+        "general": {
+          "doc_count": 99619,
+          "token_count": 140437158
+        }
+      },
+      "source_breakdown": {
+        "Github": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 8492,
+            "token_count": 12323253
+          }
+        },
+        "Pile-CC": {
+          "christian": {
+            "doc_count": 128,
+            "token_count": 687625
+          },
+          "islamic": {
+            "doc_count": 12,
+            "token_count": 50649
+          },
+          "jewish": {
+            "doc_count": 12,
+            "token_count": 46760
+          },
+          "hindu": {
+            "doc_count": 5,
+            "token_count": 149723
+          },
+          "buddhist": {
+            "doc_count": 5,
+            "token_count": 17230
+          },
+          "general": {
+            "doc_count": 24393,
+            "token_count": 22904934
+          }
+        },
+        "StackExchange": {
+          "christian": {
+            "doc_count": 10,
+            "token_count": 17714
+          },
+          "islamic": {
+            "doc_count": 1,
+            "token_count": 790
+          },
+          "jewish": {
+            "doc_count": 4,
+            "token_count": 4166
+          },
+          "hindu": {
+            "doc_count": 2,
+            "token_count": 2429
+          },
+          "buddhist": {
+            "doc_count": 3,
+            "token_count": 4081
+          },
+          "general": {
+            "doc_count": 13843,
+            "token_count": 7573092
+          }
+        },
+        "PubMed Central": {
+          "christian": {
+            "doc_count": 1,
+            "token_count": 7660
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 2742,
+            "token_count": 20454429
+          }
+        },
+        "Wikipedia (en)": {
+          "christian": {
+            "doc_count": 36,
+            "token_count": 153655
+          },
+          "islamic": {
+            "doc_count": 6,
+            "token_count": 22910
+          },
+          "jewish": {
+            "doc_count": 6,
+            "token_count": 8502
+          },
+          "hindu": {
+            "doc_count": 8,
+            "token_count": 33219
+          },
+          "buddhist": {
+            "doc_count": 3,
+            "token_count": 14248
+          },
+          "general": {
+            "doc_count": 8136,
+            "token_count": 5781881
+          }
+        },
+        "ArXiv": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 1143,
+            "token_count": 16601327
+          }
+        },
+        "OpenWebText2": {
+          "christian": {
+            "doc_count": 30,
+            "token_count": 140930
+          },
+          "islamic": {
+            "doc_count": 7,
+            "token_count": 15586
+          },
+          "jewish": {
+            "doc_count": 2,
+            "token_count": 4271
+          },
+          "hindu": {
+            "doc_count": 3,
+            "token_count": 4229
+          },
+          "buddhist": {
+            "doc_count": 2,
+            "token_count": 5753
+          },
+          "general": {
+            "doc_count": 15473,
+            "token_count": 13228689
+          }
+        },
+        "USPTO Backgrounds": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 5370,
+            "token_count": 4576655
+          }
+        },
+        "HackerNews": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 743,
+            "token_count": 998251
+          }
+        },
+        "NIH ExPorter": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 870,
+            "token_count": 370597
+          }
+        },
+        "FreeLaw": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 2375,
+            "token_count": 8395174
+          }
+        },
+        "PubMed Abstracts": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 14029,
+            "token_count": 4042098
+          }
+        },
+        "OpenSubtitles": {
+          "christian": {
+            "doc_count": 3,
+            "token_count": 30990
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 1,
+            "token_count": 23424
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 277,
+            "token_count": 2298030
+          }
+        },
+        "DM Mathematics": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 925,
+            "token_count": 3478202
+          }
+        },
+        "Enron Emails": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 451,
+            "token_count": 177683
+          }
+        },
+        "Books3": {
+          "christian": {
+            "doc_count": 59,
+            "token_count": 9666048
+          },
+          "islamic": {
+            "doc_count": 3,
+            "token_count": 299220
+          },
+          "jewish": {
+            "doc_count": 1,
+            "token_count": 71572
+          },
+          "hindu": {
+            "doc_count": 1,
+            "token_count": 73137
+          },
+          "buddhist": {
+            "doc_count": 1,
+            "token_count": 610915
+          },
+          "general": {
+            "doc_count": 80,
+            "token_count": 9578117
+          }
+        },
+        "Gutenberg (PG-19)": {
+          "christian": {
+            "doc_count": 15,
+            "token_count": 1779520
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 12,
+            "token_count": 790326
+          }
+        },
+        "Ubuntu IRC": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 7,
+            "token_count": 2113358
+          }
+        },
+        "EuroParl": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 67,
+            "token_count": 1576833
+          }
+        },
+        "YoutubeSubtitles": {
+          "christian": {
+            "doc_count": 3,
+            "token_count": 37394
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 155,
+            "token_count": 846694
+          }
+        },
+        "PhilPapers": {
+          "christian": {
+            "doc_count": 2,
+            "token_count": 27590
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 21,
+            "token_count": 1002155
+          }
+        },
+        "BookCorpus2": {
+          "christian": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "islamic": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "jewish": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "hindu": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "buddhist": {
+            "doc_count": 0,
+            "token_count": 0
+          },
+          "general": {
+            "doc_count": 15,
+            "token_count": 1325380
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "description": "Explicitly Jewish content. Strict classification: requires anchor keyword, 8+ weighted hits, 3+ groups.",
+  "min_hits": 8,
+  "min_groups": 3,
+  "require_anchor": true,
+  "keywords": {
+    "scripture": {
+      "anchor": [
+        "Torah", "Tanakh", "Pentateuch",
+        "Bereishit", "Shemot", "Vayikra", "Bamidbar", "Devarim",
+        "Nevi'im", "Ketuvim", "Mishnah", "Talmud",
+        "Babylonian Talmud", "Jerusalem Talmud", "Gemara",
+        "Midrash", "Targum", "Tosefta", "Baraita",
+        "Pirkei Avot", "Ethics of the Fathers"
+      ],
+      "strong": [
+        "Hebrew Bible"
+      ],
+      "supporting": []
+    },
+    "theology_and_law": {
+      "anchor": [
+        "halakha", "halacha", "mitzvah", "mitzvot",
+        "kashrut", "Shabbat",
+        "Hasidic", "Hasidism", "Haredi",
+        "rabbinical", "rabbinic", "rebbe",
+        "shul", "yeshiva", "beit midrash",
+        "teshuvah", "tzedakah", "tikkun olam",
+        "Kabbalah", "Kabbalistic", "Zohar", "Sefirot",
+        "Ein Sof", "Tikkun", "Shekhinah"
+      ],
+      "strong": [
+        "Jewish", "Judaism", "Judaic",
+        "Orthodox Judaism", "Conservative Judaism", "Reform Judaism",
+        "Ashkenazi", "Sephardi", "kosher"
+      ],
+      "supporting": [
+        "chosen people", "menorah", "rabbi", "synagogue", "Sabbath"
+      ]
+    },
+    "scholars_and_figures": {
+      "anchor": [
+        "Maimonides", "Rambam", "Rashi", "Nachmanides", "Ramban",
+        "Ibn Ezra", "Saadia Gaon", "Judah Halevi",
+        "Vilna Gaon", "Baal Shem Tov", "Nachman of Breslov",
+        "Joseph Soloveitchik", "Abraham Joshua Heschel",
+        "Martin Buber", "Franz Rosenzweig", "Emmanuel Levinas",
+        "Moses Mendelssohn", "Samson Raphael Hirsch"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "practice_and_observance": {
+      "anchor": [
+        "Rosh Hashanah", "Yom Kippur", "Sukkot", "Pesach",
+        "Shavuot", "Simchat Torah",
+        "bar mitzvah", "bat mitzvah", "brit milah",
+        "mezuzah", "tefillin", "tallit", "kippah", "yarmulke",
+        "mikveh", "minyan", "kaddish", "Shema",
+        "Seder", "Haggadah", "matzah"
+      ],
+      "strong": [
+        "Passover", "Hanukkah", "Chanukah", "Purim"
+      ],
+      "supporting": []
+    },
+    "works_and_texts": {
+      "anchor": [
+        "Mishneh Torah", "Guide for the Perplexed",
+        "Shulchan Aruch", "Kitzur Shulchan Aruch",
+        "Tanya", "Likutey Moharan", "Nefesh HaChaim",
+        "Moreh Nevuchim"
+      ],
+      "strong": [],
+      "supporting": []
+    }
+  },
+  "verse_patterns": [
+    "\\b(?:Bereishit|Shemot|Vayikra|Bamidbar|Devarim|Mishnah|Talmud)\\s+[A-Za-z]+\\s+\\d+"
+  ],
+  "negative_filters": []
+}

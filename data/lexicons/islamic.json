@@ -1,0 +1,83 @@
+{
+  "description": "Explicitly Islamic content. Strict classification: requires anchor keyword, 8+ weighted hits, 3+ groups.",
+  "min_hits": 8,
+  "min_groups": 3,
+  "require_anchor": true,
+  "keywords": {
+    "scripture": {
+      "anchor": [
+        "Quran", "Qur'an", "Koran", "surah", "sura", "ayah", "ayat",
+        "Bismillah", "Al-Fatiha", "Al-Baqarah", "juz",
+        "hadith", "Sahih Bukhari", "Sahih Muslim", "Sunan",
+        "Sunnah", "Sira", "Sirah", "Tafsir"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "theology_and_law": {
+      "anchor": [
+        "Sharia", "Shariah", "fiqh", "fatwa", "ijtihad",
+        "ijma", "qiyas", "Hanafi", "Maliki", "Hanbali",
+        "halal", "haram", "makruh", "mustahabb", "fard", "wajib",
+        "aqidah", "tawhid", "shirk", "kalam", "usul al-fiqh",
+        "madhhab", "ummah", "ulama", "mufti"
+      ],
+      "strong": [
+        "Islamic", "Islam", "Muslim", "Allah",
+        "Prophet Muhammad", "Sunni", "Shia", "Shiite",
+        "Sufi", "Salafi", "Wahhabi"
+      ],
+      "supporting": [
+        "mosque", "minaret", "imam", "masjid", "madrasa",
+        "caliphate", "caliph", "hijab", "niqab", "jihad",
+        "Muhammad", "Mecca", "Medina"
+      ]
+    },
+    "scholars_and_figures": {
+      "anchor": [
+        "Abu Hanifa", "Malik ibn Anas", "Ibn Hanbal",
+        "al-Ghazali", "Ibn Rushd", "Averroes", "Ibn Sina", "Avicenna",
+        "Ibn Taymiyyah", "Ibn Khaldun", "al-Tabari", "Ibn Kathir",
+        "Rumi", "Ibn Arabi", "al-Hallaj", "al-Bukhari",
+        "al-Nawawi", "al-Ashari", "al-Maturidi"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "practice_and_devotion": {
+      "anchor": [
+        "salah", "salat", "namaz",
+        "sawm", "zakat", "sadaqah",
+        "hajj", "shahada", "declaration of faith",
+        "wudu", "adhan", "call to prayer",
+        "dhikr", "dua",
+        "Eid al-Fitr", "Eid al-Adha",
+        "Muharram", "Ashura", "Mawlid",
+        "jannah", "jahannam", "Yawm al-Qiyamah"
+      ],
+      "strong": [
+        "Kaaba"
+      ],
+      "supporting": [
+        "Ramadan", "Eid"
+      ]
+    },
+    "works_and_texts": {
+      "anchor": [
+        "Ihya Ulum al-Din", "Revival of the Religious Sciences",
+        "Muqaddimah", "Risala", "Maqasid al-Shariah",
+        "Masnavi", "Mathnawi", "Futuh al-Ghayb"
+      ],
+      "strong": [],
+      "supporting": []
+    }
+  },
+  "verse_patterns": [
+    "\\b(?:Surah|Sura)\\s+[A-Z][a-z]+\\s+\\d+:\\d+",
+    "\\bQuran\\s+\\d+:\\d+"
+  ],
+  "negative_filters": [
+    {"pattern": "\\bMuhammad Ali\\b", "cancels": ["Muhammad"]},
+    {"pattern": "\\bmecca for\\b", "cancels": ["Mecca"]}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "description": "Explicitly Hindu content. Strict classification: requires anchor keyword, 8+ weighted hits, 3+ groups.",
+  "min_hits": 8,
+  "min_groups": 3,
+  "require_anchor": true,
+  "keywords": {
+    "scripture": {
+      "anchor": [
+        "Vedas", "Rigveda", "Rig Veda", "Yajurveda", "Samaveda", "Atharvaveda",
+        "Upanishad", "Upanishads", "Bhagavad Gita",
+        "Mahabharata", "Ramayana", "Puranas",
+        "Brahmana", "Aranyaka", "Smriti", "Shruti",
+        "Manusmriti", "Arthashastra", "Dharmashastra",
+        "Yoga Sutras", "Brahma Sutras", "Vedanta Sutra"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "theology_and_philosophy": {
+      "anchor": [
+        "Sanatan Dharma", "Sanatana Dharma",
+        "Brahman", "Atman", "Moksha",
+        "Vedanta", "Advaita", "Dvaita", "Vishishtadvaita",
+        "Samkhya", "Nyaya", "Vaisheshika", "Mimamsa",
+        "avatara", "varnashrama", "puja", "yantra"
+      ],
+      "strong": [
+        "Hindu", "Hinduism", "ahimsa"
+      ],
+      "supporting": [
+        "tantra", "satya", "varna", "ashram"
+      ]
+    },
+    "deities_and_figures": {
+      "anchor": [
+        "Vishnu", "Ganesha", "Hanuman",
+        "Saraswati", "Durga", "Parvati",
+        "Shankaracharya", "Shankara", "Ramanuja", "Madhva",
+        "Patanjali", "Vyasa", "Valmiki",
+        "Swami Vivekananda", "Ramakrishna", "Aurobindo",
+        "Ramana Maharshi"
+      ],
+      "strong": [
+        "Shiva", "Krishna", "Rama", "Lakshmi", "Kali", "Shakti"
+      ],
+      "supporting": []
+    },
+    "practice_and_observance": {
+      "anchor": [
+        "mandir",
+        "Deepavali", "Navaratri", "Navratri",
+        "Dussehra", "Ganesh Chaturthi", "Maha Shivaratri",
+        "arti", "aarti", "prasad", "tilak",
+        "sannyasa", "brahmacharya", "grihastha", "vanaprastha",
+        "sadhu", "sanyasi",
+        "darshan", "kirtan", "bhajan",
+        "yagna", "havan", "sacred thread"
+      ],
+      "strong": [],
+      "supporting": [
+        "swami", "Diwali", "Holi"
+      ]
+    }
+  },
+  "verse_patterns": [
+    "\\bBhagavad Gita\\s+\\d+[.:]+\\d+",
+    "\\b(?:Chapter|Adhyaya)\\s+\\d+,?\\s*(?:Verse|Shloka)\\s+\\d+"
+  ],
+  "negative_filters": []
+}

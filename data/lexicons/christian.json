@@ -1,0 +1,138 @@
+{
+  "description": "Tier 1 explicitly Christian content. Strict classification: requires at least 1 anchor keyword, 8+ weighted hits, and hits across 3+ keyword groups.",
+  "min_hits": 8,
+  "min_groups": 3,
+  "require_anchor": true,
+  "keywords": {
+    "scripture": {
+      "anchor": [
+        "Old Testament", "New Testament", "Gospel of",
+        "Book of Genesis", "Book of Exodus", "Book of Revelation",
+        "Leviticus", "Deuteronomy", "Ecclesiastes", "Song of Solomon",
+        "Lamentations", "Corinthians", "Galatians", "Ephesians",
+        "Philippians", "Colossians", "Thessalonians", "Philemon",
+        "KJV", "King James Version", "ESV", "NIV", "NASB", "NKJV",
+        "NLT", "Septuagint"
+      ],
+      "strong": [
+        "Bible", "Scripture", "biblical"
+      ],
+      "supporting": []
+    },
+    "theology": {
+      "anchor": [
+        "Christology", "soteriology", "pneumatology", "hamartiology",
+        "transubstantiation", "consubstantiation", "parousia", "imago Dei",
+        "sola fide", "sola gratia", "sola scriptura", "hypostatic union",
+        "theosis", "kenosis", "perichoresis", "filioque",
+        "Nicene Creed", "Apostles Creed", "catechism",
+        "systematic theology", "dogmatics",
+        "covenant theology", "dispensationalism",
+        "total depravity", "justification by faith",
+        "eschatology", "ecclesiology", "predestination",
+        "original sin", "sanctification", "atonement",
+        "trinitarian"
+      ],
+      "strong": [
+        "theology", "theologian"
+      ],
+      "supporting": [
+        "doctrine", "dogma", "heresy"
+      ]
+    },
+    "theologians_and_figures": {
+      "anchor": [
+        "Aquinas", "Saint Augustine", "Karl Barth",
+        "Bonhoeffer", "Tillich", "Reinhold Niebuhr",
+        "Moltmann", "Pannenberg", "Rahner", "von Balthasar",
+        "Athanasius", "Origen", "Tertullian", "Irenaeus",
+        "Chrysostom", "Basil the Great", "Gregory of Nyssa",
+        "Gregory of Nazianzus", "Saint Ambrose", "Saint Jerome",
+        "Anselm", "Bonaventure", "Duns Scotus", "Ignatius of Loyola",
+        "John Wesley", "Jonathan Edwards", "Charles Spurgeon",
+        "N.T. Wright", "Alvin Plantinga",
+        "Church Fathers", "Desert Fathers", "Patristic"
+      ],
+      "strong": [],
+      "supporting": [
+        "C.S. Lewis", "G.K. Chesterton"
+      ]
+    },
+    "worship_and_practice": {
+      "anchor": [
+        "homily", "preaching the Word",
+        "eucharist", "Holy Communion",
+        "absolution", "excommunication",
+        "doxology", "vespers", "matins", "compline",
+        "Ash Wednesday", "Good Friday", "Palm Sunday", "Ascension Day"
+      ],
+      "strong": [
+        "liturgy", "ordination", "benediction", "hymn",
+        "Advent", "Lent", "Pentecost"
+      ],
+      "supporting": [
+        "Epiphany"
+      ]
+    },
+    "ecclesiology": {
+      "anchor": [
+        "Catholic Church", "Orthodox Church",
+        "apostolic succession", "magisterium", "papacy",
+        "encyclical", "Great Schism", "Counter-Reformation",
+        "diocese", "synod", "Arminian"
+      ],
+      "strong": [
+        "ecumenical", "Calvinist", "Vatican"
+      ],
+      "supporting": [
+        "Baptist", "Methodist", "Presbyterian", "Lutheran",
+        "Anglican", "Pentecostal", "Evangelical"
+      ]
+    },
+    "soteriology_and_devotion": {
+      "anchor": [
+        "saved by grace", "born again",
+        "crucifixion", "Calvary", "Golgotha",
+        "the blood of Christ", "lamb of God", "Lord Jesus",
+        "Jesus Christ", "Holy Spirit", "Holy Ghost", "Son of God",
+        "King of Kings", "Lord of Lords", "the Word made flesh",
+        "praise God", "glory to God",
+        "grace of God", "mercy of God",
+        "evangelism", "Great Commission"
+      ],
+      "strong": [
+        "forgiveness of sins"
+      ],
+      "supporting": [
+        "Messiah", "Savior", "Redeemer", "hallelujah",
+        "repentance", "missionary"
+      ]
+    },
+    "works_and_texts": {
+      "anchor": [
+        "Summa Theologica", "Summa Theologiae", "City of God",
+        "Institutes of the Christian Religion",
+        "Church Dogmatics", "Mere Christianity",
+        "The Cost of Discipleship", "Pilgrim's Progress",
+        "Imitation of Christ", "Dark Night of the Soul",
+        "Book of Common Prayer", "Westminster Confession",
+        "Augsburg Confession", "Heidelberg Catechism",
+        "Catechism of the Catholic Church"
+      ],
+      "strong": [],
+      "supporting": []
+    }
+  },
+  "verse_patterns": [
+    "\\b(?:Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|(?:1|2|I|II)\\s*Samuel|(?:1|2|I|II)\\s*Kings|(?:1|2|I|II)\\s*Chronicles|Ezra|Nehemiah|Esther|Job|Psalms?|Proverbs|Ecclesiastes|Song of Solomon|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|(?:1|2|I|II)\\s*Corinthians|Galatians|Ephesians|Philippians|Colossians|(?:1|2|I|II)\\s*Thessalonians|(?:1|2|I|II)\\s*Timothy|Titus|Philemon|Hebrews|James|(?:1|2|I|II)\\s*Peter|(?:1|2|3|I|II|III)\\s*John|Jude|Revelation)\\s+\\d+:\\d+"
+  ],
+  "negative_filters": [
+    {"pattern": "\\bMartin Luther King\\b", "cancels": ["Martin Luther"]},
+    {"pattern": "\\bMLK\\b", "cancels": ["Martin Luther"]},
+    {"pattern": "\\bSega Genesis\\b", "cancels": ["Genesis"]},
+    {"pattern": "\\bSalvation Army\\b", "cancels": ["salvation"]},
+    {"pattern": "\\bTrinity College\\b", "cancels": ["Trinity"]},
+    {"pattern": "\\bTrinity University\\b", "cancels": ["Trinity"]},
+    {"pattern": "\\bSacramento\\b", "cancels": ["sacrament"]}
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "description": "Explicitly Buddhist content. Strict classification: requires anchor keyword, 8+ weighted hits, 3+ groups.",
+  "min_hits": 8,
+  "min_groups": 3,
+  "require_anchor": true,
+  "keywords": {
+    "scripture": {
+      "anchor": [
+        "Pali Canon", "Tipitaka", "Tripitaka",
+        "Sutta Pitaka", "Vinaya Pitaka", "Abhidhamma",
+        "Dhammapada", "Heart Sutra", "Diamond Sutra",
+        "Lotus Sutra", "Platform Sutra",
+        "Lankavatara Sutra", "Avatamsaka Sutra",
+        "Vimalakirti Sutra", "Surangama Sutra",
+        "Tibetan Book of the Dead", "Bardo Thodol",
+        "Jataka Tales"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "theology_and_philosophy": {
+      "anchor": [
+        "Four Noble Truths", "Noble Eightfold Path",
+        "Eightfold Path", "Nibbana", "Dukkha",
+        "Sunyata", "Anatta",
+        "Anicca", "Pratityasamutpada",
+        "Dependent origination", "Dependent arising",
+        "Bodhisattva", "Bodhicitta", "Buddha-nature",
+        "Madhyamaka", "Yogacara",
+        "Tathagatagarbha", "Skandha",
+        "Three Jewels", "Triple Gem",
+        "Five Precepts", "Paramita",
+        "Karuna", "Metta", "Prajna"
+      ],
+      "strong": [
+        "Buddhist", "Buddhism",
+        "Theravada", "Mahayana", "Vajrayana",
+        "Pure Land", "Tibetan Buddhism",
+        "Sangha", "Thich Nhat Hanh"
+      ],
+      "supporting": [
+        "Middle Way", "Loving-kindness", "Non-self", "Dalai Lama"
+      ]
+    },
+    "figures": {
+      "anchor": [
+        "Shakyamuni", "Siddhartha Gautama",
+        "Nagarjuna", "Vasubandhu", "Asanga",
+        "Padmasambhava", "Milarepa", "Tsongkhapa",
+        "Dogen", "Shinran", "Kukai", "Nichiren",
+        "Ajahn Chah", "Mahasi Sayadaw",
+        "Shantideva", "Buddhaghosa", "Atisha",
+        "Suzuki Roshi", "Pema Chodron"
+      ],
+      "strong": [],
+      "supporting": []
+    },
+    "practice": {
+      "anchor": [
+        "Vipassana", "Samatha", "Zazen",
+        "Satipatthana",
+        "dharma talk", "dharma teacher",
+        "sesshin", "ango",
+        "Vesak", "Bodhi Day", "Losar",
+        "stupa", "zendo", "vihara",
+        "thangka",
+        "Om Mani Padme Hum",
+        "bhikkhu", "bhikkhuni"
+      ],
+      "strong": [],
+      "supporting": [
+        "pagoda"
+      ]
+    }
+  },
+  "verse_patterns": [
+    "\\bDhammapada\\s+\\d+",
+    "\\b(?:Sutta|Sutra)\\s+[A-Z][a-z]+"
+  ],
+  "negative_filters": [
+    {"pattern": "\\bnirvana\\b.*\\b(?:cobain|grunge|nevermind|smells like|kurt|album|rock)\\b", "cancels": ["Nirvana"]},
+    {"pattern": "\\b(?:cobain|grunge|nevermind|smells like)\\b.*\\bnirvana\\b", "cancels": ["Nirvana"]}
+  ]
+}
