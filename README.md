@@ -4,6 +4,8 @@
 
 A corpus analysis study measuring the proportion of explicitly religious content — with a focus on Christianity — in open-source LLM pretraining datasets. Produced by the [Institute for Christian Machine Intelligence](https://github.com/christian-machine-intelligence).
 
+**Paper:** [What the Models Already Know: 67 Billion Tokens of Christian Moral Reasoning in the Pretraining Corpus](https://icmi-proceedings.com/ICMI-006-christian-tokens) (ICMI Working Paper No. 6)
+
 ## Key Finding
 
 Approximately **67 billion tokens (~8.1%)** of The Pile — a foundational open-source pretraining corpus — consist of explicitly Christian content: scripture, theology, sermons, catechisms, apologetics, and church history. This makes Christianity by far the largest religious tradition represented in LLM training data, exceeding the next largest (Buddhism, at ~3.5B tokens) by nearly 20x.
